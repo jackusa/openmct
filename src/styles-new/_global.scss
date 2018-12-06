@@ -416,11 +416,10 @@ mct-container {
     padding: 1em;
 }
 
+[disabled],
 .disabled,
 a.disabled {
-    opacity: $controlDisabledOpacity;
-    pointer-events: none !important;
-    cursor: default !important;
+    @include disabled();
 }
 
 .s-status-missing {
